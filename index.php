@@ -33,36 +33,41 @@
 
 		</div><!-- /top-fixed -->
 
-		<div class="section work-section">
-			<div class="size-50">
-				<img src="top-work1.jpg" />
+		<div class="section work-section overlay-trigger">
+			<div class="size-50 work-section-left">
+				<span class="overlay">View Work</span>
+				<img src="img/work-top/swimmer.jpg" />
 			</div>
-			<div class="size-50">
-				<img src="top-work1.jpg" />
+			<div class="size-50 work-section-right">
+				<span class="overlay">View Work</span>
+				<img src="img/work-top/leaf.jpg" />
 			</div>
 		</div><!-- /section -->
 
-		<div class="section-title">
+		<div class="section-title clear-both">
 			<h2>Freshly Squeezed</h2>
 		</div>
 
-		<div class="section freshly-squeezed-section">
-			<div class="size-33 first">
-				<img src="fs-work1.jpg" />
+		<div class="section freshly-squeezed-section overlay-trigger">
+			<div class="first">
+				<span class="overlay">The<br>North Face</span>
+				<img src="img/freshly-squeezed/northface.jpg" />
 			</div>
-			<div class="size-33 second">
-				<img src="fs-work2.jpg" />
+			<div>
+				<span class="overlay">Artworks<br>For Change</span>
+				<img src="img/freshly-squeezed/awfc.jpg" />
 			</div>
-			<div class="size-33 third">
-				<img src="fs-work3.jpg" />
+			<div class="last">
+				<span class="overlay">Sporti<br>Swim Caps</span>
+				<img src="img/freshly-squeezed/swimcaps.jpg" />
 			</div>
 		</div>
 
-		<div class="section-title">
+		<div class="section-title clear-both">
 			<h2>Interactive</h2>
 		</div>
 
-		<div class="section freshly-squeezed-section">
+		<div class="section interactive-section overlay-trigger">
 
 			<div class="row">
 				<div class="size-25 first">
@@ -133,6 +138,6 @@
 	</div><!-- /wrapper -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/script.js">
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,24 +1,37 @@
-@font-face {
-  font-family: 'helvetica_neueregular';
-  src: url("../fonts/helveticaneue-webfont-webfont.eot");
-  src: url("../fonts/helveticaneue-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-webfont-webfont.woff") format("woff"), url("../fonts/helveticaneue-webfont-webfont.ttf") format("truetype"), url("../fonts/helveticaneue-webfont-webfont.svg#helvetica_neueregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Open+Sans+Condensed:700);
+/*@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-webfont-webfont.eot');
+    src: url('../fonts/helveticaneue-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-webfont-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-webfont-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
-  font-family: 'helvetica_neuebold';
-  src: url("../fonts/helveticaneuebold-webfont-webfont.eot");
-  src: url("../fonts/helveticaneuebold-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneuebold-webfont-webfont.woff") format("woff"), url("../fonts/helveticaneuebold-webfont-webfont.ttf") format("truetype"), url("../fonts/helveticaneuebold-webfont-webfont.svg#helvetica_neuebold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'helvetica_neuebold';
+    src: url('../fonts/helveticaneuebold-webfont-webfont.eot');
+    src: url('../fonts/helveticaneuebold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuebold-webfont-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuebold-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuebold-webfont-webfont.svg#helvetica_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'helvetica_neueboldcn';
-  src: url("../fonts/HelveticaNeueLTStd-BdCn.eot");
-  src: url("../fonts/HelveticaNeueLTStd-BdCn.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueLTStd-BdCn.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-BdCn.ttf") format("truetype"), url("../fonts/HelveticaNeueLTStd-BdCn.svg#helvetica_neuebold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
+    font-family: 'helvetica_neueboldcn';
+    src: url('../fonts/HelveticaNeueLTStd-BdCn.eot');
+    src: url('../fonts/HelveticaNeueLTStd-BdCn.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff'),
+         url('../fonts/HelveticaNeueLTStd-BdCn.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueLTStd-BdCn.svg#helvetica_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,6 +79,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* MIXINS */
 /* GLOBAL STYLES */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -76,27 +90,27 @@ body {
   font-size: 16px;
   color: black;
   padding: 0;
-  margin: 124px 0 0 0;
+  margin: 164px 0 0 0;
   background-color: #ffffff; }
 
 h2 {
   color: #787d80;
   text-transform: uppercase;
-  font-size: 1.5em;
-  font-family: "helvetica_neueboldcn", sans-serif;
+  font-size: 2em;
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 400; }
 
 .wrapper {
   width: 900px;
-  padding: 20px;
   margin: 0 auto; }
 
 .top-fixed {
-  padding-bottom: 10px;
+  padding: 0 20px 10px 20px;
   position: fixed;
   top: 0;
   border-bottom: solid #666666 1px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 999; }
 
 .social-media {
   text-align: right;
@@ -112,16 +126,75 @@ h2 {
   text-align: right; }
   .nav ul {
     list-style-type: none;
-    padding-top: 10px; }
+    padding-top: 30px; }
   .nav li {
     display: inline;
     padding-left: 15px; }
     .nav li a {
-      font-family: "helvetica_neueboldcn", sans-serif;
+      font-family: "Open Sans Condensed", sans-serif;
       text-decoration: none;
       font-size: 1em;
       color: #787d80;
       text-transform: uppercase; }
+
+.section-title {
+  text-align: center;
+  padding: 20px 0; }
+
+/* TOP WORK PART */
+.work-section div {
+  float: left; }
+.work-section .work-section-left {
+  padding: 20px 0 0 20px; }
+.work-section .work-section-right {
+  padding: 20px 20px 0 0; }
+.work-section .overlay {
+  height: 320px;
+  width: 430px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 150px;
+  font-family: "Open Sans Condensed";
+  text-align: center;
+  color: #787d80;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  display: none; }
+.work-section img {
+  width: 430px;
+  height: auto; }
+
+/* FRESHLY SQUEEZED PART */
+.freshly-squeezed-section {
+  margin: 0 20px; }
+  .freshly-squeezed-section .overlay {
+    height: 161px;
+    width: 280px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 50px;
+    font-family: "Open Sans Condensed";
+    text-align: center;
+    color: #787d80;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    display: none; }
+  .freshly-squeezed-section div {
+    float: left;
+    text-align: center;
+    margin-right: 10px; }
+    .freshly-squeezed-section div.first {
+      text-align: left; }
+    .freshly-squeezed-section div.last {
+      text-align: right;
+      margin-right: 0; }
+  .freshly-squeezed-section img {
+    width: 280px;
+    height: auto; }
+
+/* INTERACTIVE */
+.interactive-section {
+  margin: 20px 20px; }
 
 /* LAYOUT STYLES */
 .float-left {
