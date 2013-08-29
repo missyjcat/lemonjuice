@@ -16,7 +16,7 @@
 			$('.overlay-trigger img').hover( function() {
 				$(this).parent().find('.overlay').css({'display':'block','cursor':'pointer'});
 			});
-			$('.overlay-trigger .overlay').mouseout( function() {
+			$('.overlay-trigger .overlay').mouseleave( function() {
 				$(this).parent().find('.overlay').css('display','none');
 			});
 		});
