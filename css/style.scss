@@ -7,7 +7,7 @@
 	height: $height;
 	width: $width;
 	position: absolute;
-	background-color: rgba(#ffffff, 0.8);
+	background: transparent url('../img/white-80pct.png');
 	padding-top: $paddingTop;
 	font-family: $boldcon;
 	text-align: center;
@@ -137,7 +137,7 @@
 			@include overlay(161px,280px,1.6em,50px)
 		}
 
-		div {
+		.thumb {
 			float: left;
 			text-align: center;
 			margin-right: 10px;
@@ -160,8 +160,36 @@
 
 	.interactive-section {
 
-		margin: 20px 20px;
+		margin: 0 20px;
 
+		.overlay {
+			@include overlay(157px,209px,1.6em,50px)
+		}
+
+		.thumb {
+			float: left;
+			text-align: center;
+			margin-right: 8px;
+			&.first {
+				text-align: left;
+			}
+			&.last {
+				text-align: right;
+				margin-right: 0;
+			}
+		}
+
+		img {
+			width: 209px;
+			height: auto;
+		}
+
+	}
+
+/* MORE NEWS */
+	
+	.more-news-section {
+		border-bottom: solid 1px $grey-text;
 	}
 
 /* LAYOUT STYLES */
@@ -196,4 +224,8 @@
 
 	.active {
 		color: $yellow-text;
+	}
+
+	.spacer-40 {
+		height: 40px;
 	}

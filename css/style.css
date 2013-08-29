@@ -152,7 +152,7 @@ h2 {
   height: 320px;
   width: 430px;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: transparent url("../img/white-80pct.png");
   padding-top: 150px;
   font-family: "Open Sans Condensed";
   text-align: center;
@@ -171,7 +171,7 @@ h2 {
     height: 161px;
     width: 280px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: transparent url("../img/white-80pct.png");
     padding-top: 50px;
     font-family: "Open Sans Condensed";
     text-align: center;
@@ -179,13 +179,13 @@ h2 {
     text-transform: uppercase;
     font-size: 1.6em;
     display: none; }
-  .freshly-squeezed-section div {
+  .freshly-squeezed-section .thumb {
     float: left;
     text-align: center;
     margin-right: 10px; }
-    .freshly-squeezed-section div.first {
+    .freshly-squeezed-section .thumb.first {
       text-align: left; }
-    .freshly-squeezed-section div.last {
+    .freshly-squeezed-section .thumb.last {
       text-align: right;
       margin-right: 0; }
   .freshly-squeezed-section img {
@@ -194,7 +194,35 @@ h2 {
 
 /* INTERACTIVE */
 .interactive-section {
-  margin: 20px 20px; }
+  margin: 0 20px; }
+  .interactive-section .overlay {
+    height: 157px;
+    width: 209px;
+    position: absolute;
+    background: transparent url("../img/white-80pct.png");
+    padding-top: 50px;
+    font-family: "Open Sans Condensed";
+    text-align: center;
+    color: #787d80;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    display: none; }
+  .interactive-section .thumb {
+    float: left;
+    text-align: center;
+    margin-right: 8px; }
+    .interactive-section .thumb.first {
+      text-align: left; }
+    .interactive-section .thumb.last {
+      text-align: right;
+      margin-right: 0; }
+  .interactive-section img {
+    width: 209px;
+    height: auto; }
+
+/* MORE NEWS */
+.more-news-section {
+  border-bottom: solid 1px #787d80; }
 
 /* LAYOUT STYLES */
 .float-left {
@@ -220,3 +248,6 @@ h2 {
 
 .active {
   color: #e4c320; }
+
+.spacer-40 {
+  height: 40px; }
