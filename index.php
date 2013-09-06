@@ -5,33 +5,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body>
+<body id="home">
 	<div class="wrapper">
 
-		<div class="top-fixed">
-		
-			<div class="social-media">
-				<img src="img/facebook.png" />
-				<img src="img/i.png" />
-				<img src="img/twitter.png" />
-				<img src="img/v.png" />
-			</div><!-- /social-media -->
-
-			<div class="logo float-left">
-				<a href="/"><img src="img/lemonjuice-logo.jpg" /></a>
-			</div><!-- /logo -->
-
-			<div class="nav float-left">
-				<ul>
-					<li><a href="work.php">Work</a></li>
-					<li><a href="news.php">News</a></li>
-					<li><a href="interactive">Interactive</a></li>
-					<li><a href="profile">Profile</a></li>
-					<li><a href="contact">Contact</a></li>
-				</ul>
-			</div><!-- /nav -->
-
-		</div><!-- /top-fixed -->
+		<?php include 'include/header.php'; ?>
 
 		<div class="section work-section overlay-trigger">
 			<div class="size-50 work-section-left">

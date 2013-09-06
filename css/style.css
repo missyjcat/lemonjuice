@@ -93,6 +93,20 @@ body {
   margin: 164px 0 0 0;
   background-color: #ffffff; }
 
+p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #58585b; }
+
+h1 {
+  color: black;
+  font-size: 4em;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px; }
+
 h2 {
   color: #787d80;
   text-transform: uppercase;
@@ -136,6 +150,8 @@ h2 {
       font-size: 1em;
       color: #787d80;
       text-transform: uppercase; }
+  .nav li.active a {
+    color: #e4c320; }
 
 .section-title {
   text-align: center;
@@ -210,7 +226,7 @@ h2 {
   .interactive-section .thumb {
     float: left;
     text-align: center;
-    margin-right: 8px; }
+    margin: 3px 8px 3px 0; }
     .interactive-section .thumb.first {
       text-align: left; }
     .interactive-section .thumb.last {
@@ -223,6 +239,13 @@ h2 {
 /* MORE NEWS */
 .more-news-section {
   border-bottom: solid 1px #787d80; }
+
+/* PROFILE */
+.profile-section {
+  width: 100%;
+  padding: 0 50% 40px 20px;
+  background: transparent url("../img/lemon-half-bg.png") no-repeat right top;
+  min-height: 500px; }
 
 /* LAYOUT STYLES */
 .float-left {
