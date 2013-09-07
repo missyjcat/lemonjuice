@@ -48,7 +48,7 @@
 
 	h1 {
 		color: $black-text;
-		font-size: 4em;
+		font-size: 3.3em;
 		font-family: $boldcon, sans-serif;
 		font-weight: 400;
 		margin-bottom: 40px;
@@ -220,6 +220,13 @@
 		width: 100%;
 		padding: 0 50% 40px 20px;
 		background: transparent url('../img/lemon-half-bg.png') no-repeat right top;
+		min-height: 500px;
+	}
+
+	.contact-form-section {
+		width: 100%;
+		padding: 0 50% 40px 20px;
+		background: transparent url('../img/lemon-bg.png') no-repeat right top;
 		min-height: 500px;
 	}
 

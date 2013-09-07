@@ -10,7 +10,7 @@
 
 		<?php include 'include/header.php'; ?>
 
-		<div class="section work-section overlay-trigger">
+		<div class="section work-section overlay-trigger work">
 			<div class="size-50 work-section-left">
 				<span class="overlay">View Work</span>
 				<span class="next-img"></span>
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 
-		<div class="section-title clear-both">
+		<div class="section-title clear-both interactive">
 			<h2>Interactive</h2>
 		</div>
 
@@ -138,7 +138,12 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/script.js"></script>
+
 <script>
+	lemonJuice.initialize();
+	lemonJuice.autoScroll('interactive');
+	lemonJuice.menuHighlight();
+
 	// This is where you input the locations of the left and right "WORK" images
 	lemonJuice.leftImages = [
 			'swimmer.jpg',

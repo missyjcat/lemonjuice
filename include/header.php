@@ -13,11 +13,11 @@
 
 			<div class="nav float-left">
 				<ul>
-					<li class="work"><a href="index.php">Work</a></li>
-					<li class="news"><a href="news.php">News</a></li>
-					<li class="#"><a href="interactive">Interactive</a></li>
-					<li class="profile"><a href="profile.php">Profile</a></li>
-					<li class="contact"><a href="contact.php">Contact</a></li>
+					<li class="work-menu-item"><a href="index.php">Work</a></li>
+					<li class="news-menu-item"><a href="news.php">News</a></li>
+					<li class="interactive-menu-item"><a href="index.php?interactive">Interactive</a></li>
+					<li class="profile-menu-item"><a href="profile.php">Profile</a></li>
+					<li class="contact-menu-item"><a href="contact.php">Contact</a></li>
 				</ul>
 			</div><!-- /nav -->
 
