@@ -15,6 +15,7 @@
 	text-transform: uppercase;
 	font-size: $fontSize;
 	display: none;
+	z-index: 10;
 }
 
 /* GLOBAL STYLES */
@@ -117,6 +118,10 @@
 
 	}
 
+	#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a {
+		color: $yellow-text;
+	}
+
 	.section-title {
 		text-align: center;
 		padding: 20px 0;
@@ -139,6 +144,13 @@
 			padding: 20px 20px 0 0;
 		}
 
+		.next-img {
+			height: 320px;
+			width: 430px;
+			position: absolute;
+			display: none;
+		}
+		
 		.overlay {
 			@include overlay(320px, 430px, 1.6em);
 		}
@@ -266,4 +278,8 @@
 
 	.spacer-40 {
 		height: 40px;
+	}
+
+	.text-align-center {
+		text-align: center;
 	}

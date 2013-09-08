@@ -16,7 +16,7 @@
 
 			// Listen for mouseover event when mousing over a tile on the homepage
 			// Trigger the span, and on mouseout hide it again.
-			$('.overlay-trigger img').mouseenter( function() {
+			$('.overlay-trigger span, .overlay-trigger img').mouseenter( function() {
 				$('.overlay').hide();
 				$(this).parent().find('.overlay').css({'display':'block','cursor':'pointer'});
 			});
@@ -38,7 +38,7 @@
 				$('.nav li').removeClass('active');
 				$('.interactive-menu-item').addClass('active');
 			}
-	}
+	};
 
 	lemonJuice.menuHighlight = function() {
 		// On load and while the window scrolls, apply the appropriate classes based on window position
@@ -46,27 +46,30 @@
 			if ( window.pageYOffset < $('.interactive').offset().top ) {
 				$('.nav li').removeClass('active');
 				$('.work-menu-item').addClass('active');
-			};
+			}
 
 			if ( window.pageYOffset >= $('.interactive').offset().top - 120 ) {
 				$('.nav li').removeClass('active');
 				$('.interactive-menu-item').addClass('active');
-			};
+			}
 		}
 		workHighlight();
 		addEvent(window, 'scroll', workHighlight);
-	}
+	};
 
-	lemonJuice.fade = function() {
-		// Create an array for the work left images
-		// 
-		// Create an array for the work right images
-		// 
+	lemonJuice.fade = function(imageArrayLeft,imageArrayRight) {
+		
+		for ( var i=0, imgTimeout=4000; i<imageArrayLeft.length; i++) {
+			console.log('i is ' + i + ' and image ArrayLeft.length is ' + imageArrayLeft.length + 'img name is ' + imageArrayLeft[i] + ' timeout is' + imgTimeout);
+			setTimeout( function() { $('.work-section-left .next-img').css({'background-image': 'url("img/work-top/' + imageArrayLeft[i] + '")'}).fadeIn(); }, imgTimeout);
+			imgTimeout += 4000;
+
+		}
 		// Add the "active" class to the next image and remove from current while changing opacity to 0
 		// 
 		// Animate the "active" image to opacity 1
 	};
-
+	
 	// Initializing document.ready scripts automatically
 	// lemonJuice.initialize();
 

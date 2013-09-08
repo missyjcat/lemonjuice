@@ -153,6 +153,9 @@ h2 {
   .nav li.active a {
     color: #e4c320; }
 
+#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a {
+  color: #e4c320; }
+
 .section-title {
   text-align: center;
   padding: 20px 0; }
@@ -164,6 +167,11 @@ h2 {
   padding: 20px 0 0 20px; }
 .work-section .work-section-right {
   padding: 20px 20px 0 0; }
+.work-section .next-img {
+  height: 320px;
+  width: 430px;
+  position: absolute;
+  display: none; }
 .work-section .overlay {
   height: 320px;
   width: 430px;
@@ -175,7 +183,8 @@ h2 {
   color: #787d80;
   text-transform: uppercase;
   font-size: 1.6em;
-  display: none; }
+  display: none;
+  z-index: 10; }
 .work-section img {
   width: 430px;
   height: auto; }
@@ -194,7 +203,8 @@ h2 {
     color: #787d80;
     text-transform: uppercase;
     font-size: 1.6em;
-    display: none; }
+    display: none;
+    z-index: 10; }
   .freshly-squeezed-section .thumb {
     float: left;
     text-align: center;
@@ -222,7 +232,8 @@ h2 {
     color: #787d80;
     text-transform: uppercase;
     font-size: 1.6em;
-    display: none; }
+    display: none;
+    z-index: 10; }
   .interactive-section .thumb {
     float: left;
     text-align: center;
@@ -280,3 +291,6 @@ h2 {
 
 .spacer-40 {
   height: 40px; }
+
+.text-align-center {
+  text-align: center; }
