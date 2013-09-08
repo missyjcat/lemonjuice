@@ -42,7 +42,13 @@
 
 	lemonJuice.menuHighlight = function() {
 		// On load and while the window scrolls, apply the appropriate classes based on window position
+		
+		// Making this work for IE
 		function workHighlight() {
+			if (!window.pageYOffset) {
+				window.pageYOffset = document.documentElement.scrollTop;
+			}
+
 			if ( window.pageYOffset < $('.interactive').offset().top ) {
 				$('.nav li').removeClass('active');
 				$('.work-menu-item').addClass('active');
