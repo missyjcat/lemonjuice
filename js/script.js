@@ -38,24 +38,30 @@
 				$('.nav li').removeClass('active');
 				$('.interactive-menu-item').addClass('active');
 			}
-	}
+	};
 
 	lemonJuice.menuHighlight = function() {
 		// On load and while the window scrolls, apply the appropriate classes based on window position
+		
+		// Making this work for IE
 		function workHighlight() {
+			if (!window.pageYOffset) {
+				window.pageYOffset = document.documentElement.scrollTop;
+			}
+
 			if ( window.pageYOffset < $('.interactive').offset().top ) {
 				$('.nav li').removeClass('active');
 				$('.work-menu-item').addClass('active');
-			};
+			}
 
 			if ( window.pageYOffset >= $('.interactive').offset().top - 120 ) {
 				$('.nav li').removeClass('active');
 				$('.interactive-menu-item').addClass('active');
-			};
+			}
 		}
 		workHighlight();
 		addEvent(window, 'scroll', workHighlight);
-	}
+	};
 
 	lemonJuice.fade = function() {
 		// Create an array for the work left images
