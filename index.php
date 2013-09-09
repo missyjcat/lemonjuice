@@ -6,19 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body id="home">
+	
 	<div class="wrapper">
-
 		<?php include 'include/header.php'; ?>
 
 		<div class="section work-section overlay-trigger work">
 			<div class="size-50 work-section-left">
 				<span class="overlay">View Work</span>
 				<span class="next-img"></span>
+				<span class="current-img"></span>
 				<img src="img/work-top/swimmer.jpg" />
 			</div>
 			<div class="size-50 work-section-right">
 				<span class="overlay">View Work</span>
 				<span class="next-img"></span>
+				<span class="current-img"></span>
 				<img src="img/work-top/leaf.jpg" />
 			</div>
 		</div><!-- /section -->
@@ -29,15 +31,15 @@
 
 		<div class="section freshly-squeezed-section overlay-trigger">
 			<div class="first thumb">
-				<span class="overlay">The<br>North Face</span>
+				<a href="javascript:lemonJuice.whiteOut('img/freshly-squeezed/detail/northface.jpg',858,573);"><span class="overlay">The<br>North Face</span></a>
 				<img src="img/freshly-squeezed/northface.jpg" />
 			</div>
 			<div class="thumb">
-				<span class="overlay">Artworks<br>For Change</span>
+				<a href="javascript:lemonJuice.whiteOut('img/freshly-squeezed/detail/naturestoolbox.jpg',856,573);"><span class="overlay">Artworks<br>For Change</span></a>
 				<img src="img/freshly-squeezed/awfc.jpg" />
 			</div>
 			<div class="last thumb">
-				<span class="overlay">Sporti<br>Swim Caps</span>
+				<a href="javascript:lemonJuice.whiteOut('img/freshly-squeezed/detail/sporticaps.jpg',856,599);"><span class="overlay">Sporti<br>Swim Caps</span></a>
 				<img src="img/freshly-squeezed/swimcaps.jpg" />
 			</div>
 		</div>
@@ -127,7 +129,7 @@
 		</div><!-- /section -->
 
 		<div class="section-title clear-both">
-			<h2>More News</h2>
+			<h2><a href="news.php">More News</a></h2>
 		</div>
 		<div class="spacer-40 section more-news-section">
 		</div>
@@ -136,8 +138,8 @@
 
 	</div><!-- /wrapper -->
 
-<script src="js/jquery-1.6.2.js"></script>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<!-- <script src="js/jquery-1.6.2.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/script.js"></script>
 
 <script>

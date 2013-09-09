@@ -39,6 +39,37 @@
 		background-color: #ffffff;
 	}
 
+	a {
+		color: $grey-text;
+		text-decoration: none;
+	}
+
+	.whiteout {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: transparent url('../img/white-80pct.png');
+		display: none;
+		z-index: 1000;
+	}
+
+	.detail-image {
+		position: fixed;
+		z-index: 1001;
+		padding: 10px;
+		background-color: #ffffff;
+	}
+
+	.close-box {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		color: $grey-text;
+		font-family: $boldcon;
+		z-index: 1002;
+		cursor: pointer;
+	}
+
 	p {
 		font-family: $normaltext;
 		font-weight: 300;
@@ -149,6 +180,15 @@
 			width: 430px;
 			position: absolute;
 			display: none;
+			background-image: url('../img/work-top/swimmer.jpg');
+			z-index: 9;
+		}
+
+		.current-img {
+			height: 320px;
+			width: 430px;
+			position: absolute;
+			z-index: 8;
 		}
 		
 		.overlay {

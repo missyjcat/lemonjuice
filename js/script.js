@@ -10,6 +10,12 @@
 			}
 	}
 
+	// Prevent exception in IE for console.log
+	if (typeof console === "undefined" || typeof console.log === "undefined") {
+     console = {};
+     console.log = function() {};
+   }
+
 	lemonJuice.initialize = function() {
 		// This is where I put all document.ready scripts
 		addEvent(window, 'load', function() {
@@ -64,16 +70,61 @@
 	};
 
 	lemonJuice.fade = function(imageArrayLeft,imageArrayRight) {
-		
-		for ( var i=0, imgTimeout=4000; i<imageArrayLeft.length; i++) {
-			console.log('i is ' + i + ' and image ArrayLeft.length is ' + imageArrayLeft.length + 'img name is ' + imageArrayLeft[i] + ' timeout is' + imgTimeout);
-			setTimeout( function() { $('.work-section-left .next-img').css({'background-image': 'url("img/work-top/' + imageArrayLeft[i] + '")'}).fadeIn(); }, imgTimeout);
-			imgTimeout += 4000;
 
+		function doTheFade(i,imageArray,sectionName,imgFile) {
+			setTimeout( function() {
+				console.log(imageArray[i]);
+				console.log('i is ' + i + ' and image ArrayLeft.length is ' + imageArray.length + ' img name is ' + imageArray[i] + ' timeout is' + imgTimeout);
+				var imgSpan = $(sectionName + ' .next-img');
+				var imgImage = $(sectionName + ' .current-img');
+				imgSpan.css({'background-image': 'url("img/work-top/' + imageArray[i] + '")', 'display':'none'});
+				imgSpan.fadeIn(1000, function() {imgImage.css({'background-image': 'url("img/work-top/' + imageArray[i] + '")'});});
+			}, imgTimeout);
 		}
-		// Add the "active" class to the next image and remove from current while changing opacity to 0
-		// 
-		// Animate the "active" image to opacity 1
+
+		for ( var i=0, imgTimeout=1000,imgFile=imageArrayLeft[i]; i<imageArrayLeft.length; i++) {
+			doTheFade(i,imageArrayLeft,'.work-section-left');
+			imgTimeout += 5000;
+		}
+
+		for ( var i=0, imgTimeout=0,imgFile=imageArrayRight[i]; i<imageArrayRight.length; i++) {
+			doTheFade(i,imageArrayRight,'.work-section-right');
+			imgTimeout += 5000;
+		}
+	};
+
+	var windowW = document.width;
+	var windowH = document.height;
+	var screenW = null, screenH = null;
+	
+	function updateWindow() {
+		screenW = $(window).width();
+		screenH = $(window).height();
+	}
+
+	updateWindow();
+	addEvent(window, 'resize', updateWindow);
+
+	lemonJuice.whiteOut = function(imageFilePath,width,height) {
+
+		$('body').prepend('<div class="whiteout"></div>');
+		$('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
+		$('.whiteout').fadeIn(700, function() {
+			$('.whiteout').after('<div style="top: ' + (screenH - height)/2 + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
+			$('.detail-image').fadeIn(700);
+		});
+		$('.whiteout').after('<span class="close-box">CLOSE</span>');
+
+		$('.whiteout, .close-box').click( function() {
+			$('.whiteout, .detail-image, .close-box').fadeOut(1000, function() {$('.whiteout, .detail-image, .close-box').remove();});
+		} );
+
+		addEvent(window, 'resize', function() {
+			$('.detail-image').css({ 'top': (screenH-height)/2 + 'px', 'left' : (screenW - width)/2 + 'px'});
+			$('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
+		});
+
+
 	};
 	
 	// Initializing document.ready scripts automatically
