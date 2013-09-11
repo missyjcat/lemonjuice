@@ -52,76 +52,76 @@
 
 			<div class="row">
 				<div class="first thumb">
-					<span class="overlay">Fall<br>Surf</span>
+					<a href=" http://www.swimoutlet.com/newsletter/cp10081"><span class="overlay">Fall<br>Surf</span></a>
 					<img src="img/interactive/fall-surf.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Nike<br>Swim</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp11026/"><span class="overlay">Nike<br>Swim</span></a>
 					<img src="img/interactive/nike-swim.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Sporti<br>Lifeguard</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp13029/"><span class="overlay">Sporti<br>Lifeguard</span></a>
 					<img src="img/interactive/sporti-lifeguard.jpg" />
 				</div>
 				<div class="last thumb">
-					<span class="overlay">Give a<br>Giftcard</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp111210"><span class="overlay">Give a<br>Giftcard</span></a>
 					<img src="img/interactive/gift-card.jpg" />
 				</div>
 			</div><!-- /row -->
 
 			<div class="row">
 				<div class="first thumb">
-					<span class="overlay">Red, White<br>&amp; New</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp12067"><span class="overlay">Red, White<br>&amp; New</span></a>
 					<img src="img/interactive/red-white-new.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Billabong<br>Intro</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp11085"><span class="overlay">Billabong<br>Intro</span></a>
 					<img src="img/interactive/billabong.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">MP3<br>Players</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp10107/"><span class="overlay">MP3<br>Players</span></a>
 					<img src="img/interactive/mp3.jpg" />
 				</div>
 				<div class="last thumb">
-					<span class="overlay">Tri<br>New</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp12034/"><span class="overlay">Tri<br>New</span></a>
 					<img src="img/interactive/tri-new.jpg" />
 				</div>
 			</div><!-- /row -->
 
 			<div class="row">
 				<div class="first thumb">
-					<span class="overlay">Electronic<br>Experience</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp10082"><span class="overlay">Electronic<br>Experience</span></a>
 					<img src="img/interactive/electronics.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Raise<br>Awareness</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp12101/"><span class="overlay">Raise<br>Awareness</span></a>
 					<img src="img/interactive/raise-awareness.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Looks<br>of summer</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp120612/"><span class="overlay">Looks<br>of summer</span></a>
 					<img src="img/interactive/looks-summer.jpg" />
 				</div>
 				<div class="last thumb">
-					<span class="overlay">Spring<br>Surf</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp10042/"><span class="overlay">Spring<br>Surf</span></a>
 					<img src="img/interactive/spring-surf.jpg" />
 				</div>
 			</div><!-- /row -->
 
 			<div class="row">
 				<div class="first thumb">
-					<span class="overlay">Love is in<br>the water</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp11018/"><span class="overlay">Love is in<br>the water</span></a>
 					<img src="img/interactive/inthe-water.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Kids&lsquo;<br>Swim</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp12072/"><span class="overlay">Kids&lsquo;<br>Swim</span></a>
 					<img src="img/interactive/kids.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Jantzen<br>Holiday</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp09126/"><span class="overlay">Jantzen<br>Holiday</span></a>
 					<img src="img/interactive/jantzen-holiday.jpg" />
 				</div>
 				<div class="last thumb">
-					<span class="overlay">Sporti<br>New Suits</span>
+					<a href="http://www.swimoutlet.com/newsletter/cp12095/"><span class="overlay">Sporti<br>New Suits</span></a>
 					<img src="img/interactive/sporti-new.jpg" />
 				</div>
 			</div><!-- /row -->

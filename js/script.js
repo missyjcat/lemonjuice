@@ -29,6 +29,9 @@
 			$('.overlay-trigger .overlay').mouseleave( function() {
 				$(this).parent().find('.overlay').css('display','none');
 			});
+
+			// Add target='_blank' to the interactive section links
+			$('.interactive-section a').attr('target', '_blank');
 				
 		});
 	};
