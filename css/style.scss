@@ -58,6 +58,9 @@
 		z-index: 1001;
 		padding: 10px;
 		background-color: #ffffff;
+		-webkit-box-shadow: 7px 7px 40px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow:    7px 7px 40px rgba(50, 50, 50, 0.5);
+		box-shadow:         7px 7px 40px rgba(50, 50, 50, 0.5);
 	}
 
 	.close-box {
