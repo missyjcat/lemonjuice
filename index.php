@@ -94,11 +94,11 @@
 					<img src="img/interactive/electronics.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Fall<br>Surf</span>
+					<span class="overlay">Raise<br>Awareness</span>
 					<img src="img/interactive/raise-awareness.jpg" />
 				</div>
 				<div class="thumb">
-					<span class="overlay">Raise<br>Awareness</span>
+					<span class="overlay">Looks<br>of summer</span>
 					<img src="img/interactive/looks-summer.jpg" />
 				</div>
 				<div class="last thumb">
@@ -150,8 +150,8 @@
 	// This is where you input the locations of the left and right "WORK" images
 	var leftImages = [
 			'blue.jpg',
-			'lemon.jpg',
-			'red.jpg'
+			'red.jpg',
+			'lemon.jpg'
 		];
 	var rightImages = [
 			'leaf.jpg',

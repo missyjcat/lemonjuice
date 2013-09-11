@@ -113,7 +113,7 @@ a {
 
 .close-box {
   position: fixed;
-  top: 20px;
+  top: 130px;
   right: 20px;
   color: #787d80;
   font-family: "Open Sans Condensed";
@@ -122,7 +122,7 @@ a {
 
 p {
   font-family: "Open Sans";
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
   color: #58585b; }
@@ -177,6 +177,8 @@ h2 {
       font-size: 1em;
       color: #787d80;
       text-transform: uppercase; }
+    .nav li a:hover {
+      color: #e4c320; }
   .nav li.active a {
     color: #e4c320; }
 

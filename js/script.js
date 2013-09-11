@@ -107,21 +107,29 @@
 
 	lemonJuice.whiteOut = function(imageFilePath,width,height) {
 
-		$('body').prepend('<div class="whiteout"></div>');
-		$('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
-		$('.whiteout').fadeIn(700, function() {
-			$('.whiteout').after('<div style="top: ' + (screenH - height)/2 + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
-			$('.detail-image').fadeIn(700);
-		});
-		$('.whiteout').after('<span class="close-box">CLOSE</span>');
+		// $('body').prepend('<div class="whiteout"></div>');
+		// $('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
+		// $('.whiteout').fadeIn(700, function() {
+		// 	$('.whiteout').after('<div style="top: ' + (screenH - height)/2 + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
+		// 	$('.detail-image').fadeIn(700);
+		// });
+		// $('.whiteout').after('<span class="close-box">CLOSE</span>');
 
-		$('.whiteout, .close-box').click( function() {
-			$('.whiteout, .detail-image, .close-box').fadeOut(1000, function() {$('.whiteout, .detail-image, .close-box').remove();});
-		} );
+		// $('.whiteout, .close-box').click( function() {
+		// 	$('.whiteout, .detail-image, .close-box').fadeOut(1000, function() {$('.whiteout, .detail-image, .close-box').remove();});
+		// } );
+		 
+		$('body').prepend('<div style="top: ' + (screenH - height)/2 + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
+		$('.detail-image').fadeIn(700);
+		$('.detail-image').after('<span class="close-box" style="top: ' + ((screenH-height)/2-20) + 'px; right: ' + (screenW - width)/2 + 'px;">CLOSE</span>');
+		$('.close-box').click( function() {
+			$('.detail-image, .close-box').fadeOut(1000, function() {$('.detail-image, .close-box').remove();});
+		})
 
 		addEvent(window, 'resize', function() {
 			$('.detail-image').css({ 'top': (screenH-height)/2 + 'px', 'left' : (screenW - width)/2 + 'px'});
-			$('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
+			$('.close-box').css({ 'right' : (screenW - width)/2 + 'px'});
+			// $('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
 		});
 
 

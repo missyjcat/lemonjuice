@@ -62,7 +62,7 @@
 
 	.close-box {
 		position: fixed;
-		top: 20px;
+		top: 130px;
 		right: 20px;
 		color: $grey-text;
 		font-family: $boldcon;
@@ -72,7 +72,7 @@
 
 	p {
 		font-family: $normaltext;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 1em;
 		line-height: 1.5em;
 		color: $dark-grey;
@@ -140,6 +140,10 @@
 				font-size: 1em;
 				color: $grey-text;
 				text-transform: uppercase;
+			}
+
+			a:hover {
+				color: $yellow-text;
 			}
 		}
 
