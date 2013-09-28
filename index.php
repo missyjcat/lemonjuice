@@ -12,13 +12,13 @@
 
 		<div class="section work-section overlay-trigger work">
 			<div class="size-50 work-section-left">
-				<span class="overlay">View Work</span>
+				<a href="work-green-island.php"><span class="overlay">View Work</span></a>
 				<span class="next-img"></span>
 				<span class="current-img"></span>
 				<img src="img/work-top/swimmer.jpg" />
 			</div>
 			<div class="size-50 work-section-right">
-				<span class="overlay">View Work</span>
+				<a href="work-green-island.php"><span class="overlay">View Work</span></a>
 				<span class="next-img"></span>
 				<span class="current-img"></span>
 				<img src="img/work-top/leaf.jpg" />

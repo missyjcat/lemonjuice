@@ -163,7 +163,7 @@
 
 	}
 
-	#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a {
+	#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a, #work .work-menu-item a {
 		color: $yellow-text;
 	}
 
@@ -385,6 +385,7 @@
 
 	.spacer-40 {
 		height: 40px;
+		clear: both;
 	}
 
 	.text-align-center {

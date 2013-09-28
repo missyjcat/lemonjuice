@@ -191,7 +191,7 @@ h3 {
   .nav li.active a {
     color: #e4c320; }
 
-#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a {
+#news .news-menu-item a, #contact .contact-menu-item a, #profile .profile-menu-item a, #work .work-menu-item a {
   color: #e4c320; }
 
 .section-title {
@@ -373,7 +373,8 @@ h3 {
   color: #e4c320; }
 
 .spacer-40 {
-  height: 40px; }
+  height: 40px;
+  clear: both; }
 
 .text-align-center {
   text-align: center; }

@@ -5,7 +5,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body id="work" class="green-island">
+<body id="work" class="surfaces">
 	
 	<div class="wrapper">
 		<?php include 'include/header.php'; ?>

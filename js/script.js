@@ -33,7 +33,7 @@
 			// Add target='_blank' to the interactive section links
 			$('.interactive-section a').attr('target', '_blank');
 
-			// Only on the work page, change the Interactive link
+			// Only on the home page, change the Interactive link
 			$('#home .interactive-menu-item a').click( function(e) {
 				e.preventDefault();
 				$('html,body').animate(
@@ -139,7 +139,7 @@
 		$('.detail-image').after('<span class="close-box" style="top: ' + ((screenH-height)/2) + 'px; right: ' + ((screenW - width)/2+60) + 'px;">CLOSE</span>');
 		$('.close-box, body').click( function() {
 			$('.detail-image, .close-box').fadeOut(1000, function() {$('.detail-image, .close-box').remove();});
-		})
+		});
 
 		addEvent(window, 'resize', function() {
 			$('.detail-image').css({ 'top': (screenH-height)/2 + 'px', 'left' : (screenW - width)/2 + 'px'});
@@ -147,6 +147,20 @@
 			// $('.whiteout').css({ 'width' : windowW + 'px', 'height' : windowH + 'px' });
 		});
 
+
+	};
+
+	lemonJuice.workDetail = function() {
+		addEvent(window, 'load', function() {
+			var pageName = $('body').attr('class');
+			$('.' + pageName + '-link').addClass('active');
+		});
+
+		$('.thumbnail-nav a').click( function(e) {
+			e.preventDefault();
+			var imgPath = $(this).attr('href');
+			$('.feature-image-section img').attr('src', imgPath);
+		});
 
 	};
 	
