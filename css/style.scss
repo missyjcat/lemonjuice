@@ -37,6 +37,7 @@
 		padding: 0;
 		margin: 164px 0 0 0;
 		background-color: #ffffff;
+		font-family: $normaltext;
 	}
 
 	a {
@@ -56,11 +57,10 @@
 	.detail-image {
 		position: fixed;
 		z-index: 1001;
-		padding: 10px;
 		background-color: #ffffff;
-		-webkit-box-shadow: 7px 7px 40px rgba(50, 50, 50, 0.5);
-		-moz-box-shadow:    7px 7px 40px rgba(50, 50, 50, 0.5);
-		box-shadow:         7px 7px 40px rgba(50, 50, 50, 0.5);
+		-webkit-box-shadow: 7px 7px 10px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow:    7px 7px 10px rgba(50, 50, 50, 0.3);
+		box-shadow:         7px 7px 10px rgba(50, 50, 50, 0.3);
 	}
 
 	.close-box {
@@ -87,6 +87,7 @@
 		font-family: $boldcon, sans-serif;
 		font-weight: 400;
 		margin-bottom: 40px;
+		padding: 5px 0;
 	}
 
 	h2 {
@@ -95,6 +96,12 @@
 		font-size: 2em;
 		font-family: $boldcon, sans-serif;
 		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: 600;
+		padding: 5px 0;
 	}
 
 	.wrapper {
@@ -287,6 +294,59 @@
 		padding: 0 50% 40px 20px;
 		background: transparent url('../img/lemon-bg.png') no-repeat right top;
 		min-height: 500px;
+	}
+
+	.work-content {
+		clear: both;
+	}
+
+/* WORK ITEM PAGES */
+
+	.feature-image-section {
+		margin-bottom: 15px;
+	}
+
+	.thumbnail-nav {
+		height: 40px;
+	}
+
+	.thumb {
+		float: left;
+		margin-right: 5px;
+	}
+
+	.work-text {
+		width: 600px;
+		float: left;
+		padding-top: 30px;
+
+		h2 {
+			color: $black-text;
+			padding-bottom: 15px;
+		}
+
+		h3 {
+			padding-bottom: 15px;
+		}
+
+		p {
+			width: 450px;
+			font-size: .9em;
+			padding: 5px 0;
+		}
+	}
+
+	.work-titles {
+		width: 300px;
+		float: left;
+		font-family: $boldcon;
+		font-size: 1.1em;
+		color: $grey-text;
+		text-transform: uppercase;
+
+		li {
+			padding-bottom: 7px;
+		}
 	}
 
 /* LAYOUT STYLES */

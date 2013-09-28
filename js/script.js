@@ -32,6 +32,18 @@
 
 			// Add target='_blank' to the interactive section links
 			$('.interactive-section a').attr('target', '_blank');
+
+			// Only on the work page, change the Interactive link
+			$('#home .interactive-menu-item a').click( function(e) {
+				e.preventDefault();
+				$('html,body').animate(
+				{
+					scrollTop: ($('.interactive').offset().top - 120) + 'px'
+				});
+
+				$('.nav li').removeClass('active');
+				$('.interactive-menu-item').addClass('active');
+			});
 				
 		});
 	};
@@ -122,9 +134,9 @@
 		// 	$('.whiteout, .detail-image, .close-box').fadeOut(1000, function() {$('.whiteout, .detail-image, .close-box').remove();});
 		// } );
 		 
-		$('body').prepend('<div style="top: ' + (screenH - height)/2 + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
+		$('body').prepend('<div style="top: ' + ((screenH - height)/2 + 20) + 'px; left: ' + (screenW - width)/2 + 'px; display: none;" " class="detail-image"><img src="' + imageFilePath + '"></div>');
 		$('.detail-image').fadeIn(700);
-		$('.detail-image').after('<span class="close-box" style="top: ' + ((screenH-height)/2-20) + 'px; right: ' + ((screenW - width)/2-20) + 'px;">CLOSE</span>');
+		$('.detail-image').after('<span class="close-box" style="top: ' + ((screenH-height)/2) + 'px; right: ' + ((screenW - width)/2+60) + 'px;">CLOSE</span>');
 		$('.close-box, body').click( function() {
 			$('.detail-image, .close-box').fadeOut(1000, function() {$('.detail-image, .close-box').remove();});
 		})
