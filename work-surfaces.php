@@ -11,19 +11,22 @@
 		<?php include 'include/header.php'; ?>
 
 	<div class="section feature-image-section">
-		<img class="feature-image" src="img/work-images/full/green-island/GI-1.jpg">
+		<img class="feature-image" src="img/work-images/full/surfaces/S08-1.jpg">
 	</div>
 
 	<div class="section thumbnail-nav">
-		<a href="img/work-images/full/green-island/GI-1.jpg"><img class="thumb" src="img/work-images/thumbs/green-island/thumb1.jpg"></a>
-		<a href="img/work-images/full/green-island/GI-2.jpg"><img class="thumb" src="img/work-images/thumbs/green-island/thumb2.jpg"></a>
+		<a href="img/work-images/full/surfaces/S08-1.jpg"><img class="thumb" src="img/work-images/thumbs/surfaces/thumb1.jpg"></a>
+		<a href="img/work-images/full/surfaces/S08-2.jpg"><img class="thumb" src="img/work-images/thumbs/surfaces/thumb2.jpg"></a>
+		<a href="img/work-images/full/surfaces/S08-3.jpg"><img class="thumb" src="img/work-images/thumbs/surfaces/thumb3.jpg"></a>
 	</div>
 
 	<div class="section work-content">
 		<div class="work-text">
-			<h2 class="black">The Green Island</h2>
-			<h3>Identity | Point-of-Purchase | Branding</h3>
-			<p>With the introduction of the first "all eco-friendly" flooring display aptly named <i>The Green Island</i></p>
+			<h2 class="black">Surfaces Exhibition</h2>
+			<h3>Art Direction | Environmental Design</h3>
+			<p>"What you'd expect from nature just got unexpectedly more 
+beautiful." The visual contrast between the finished product and 
+its natural origin provides the conceptual framework for the overall look and theme of USFloors' and Natural Cork's Surfaces 2008 trade show exhibition installed at the Venetian's Sands Convention Center in Las Vegas. ( 50 x 50 sq. ft.)</p>
 		</div>
 
 		<div class="work-titles">

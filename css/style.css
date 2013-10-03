@@ -315,6 +315,9 @@ h3 {
 /* WORK ITEM PAGES */
 .feature-image-section {
   margin-bottom: 15px; }
+  .feature-image-section img {
+    width: 900px;
+    height: auto; }
 
 .thumbnail-nav {
   height: 40px; }

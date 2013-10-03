@@ -23,7 +23,7 @@
 		<div class="work-text">
 			<h2 class="black">The Green Island</h2>
 			<h3>Identity | Point-of-Purchase | Branding</h3>
-			<p>With the introduction of the first "all eco-friendly" flooring display aptly named <i>The Green Island</i></p>
+			<p>With the introduction of the first "all-eco-friendly" flooring display aptly named <i>The Green Island</i> by USFloors, the ecological story behind its diverse environmentally responsible product lines is cohesively extended and narrated through a composition of rich botanical scenery, beautiful island muses, and organic graphic elements.</p>
 		</div>
 
 		<div class="work-titles">
