@@ -144,8 +144,8 @@
 
 <script>
 	lemonJuice.initialize();
-	lemonJuice.autoScroll('interactive');
-	lemonJuice.menuHighlight();
+	// lemonJuice.autoScroll('interactive');
+	// lemonJuice.menuHighlight();
 
 	// This is where you input the locations of the left and right "WORK" images
 	var leftImages = [
