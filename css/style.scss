@@ -280,6 +280,29 @@
 		border-bottom: solid 1px $grey-text;
 	}
 
+/* NEWS PAGE */
+
+	.news-article {
+		padding: 40px;
+		border-bottom: 1px solid $dark-grey;
+
+		.main-image {
+			margin: 20px 0;
+		}
+
+		h3 {
+			font-size: 1.8em;
+			font-family: $boldcon;
+			padding-bottom: 10px;
+		}
+
+		p {
+			font-size: 1em;
+			font-weight: 200;
+		}
+
+	}
+
 /* PROFILE */
 
 	.profile-section {
@@ -354,6 +377,8 @@
 			padding-bottom: 7px;
 		}
 	}
+
+
 
 /* LAYOUT STYLES */
 

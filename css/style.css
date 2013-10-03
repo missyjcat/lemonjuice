@@ -296,6 +296,20 @@ h3 {
 .more-news-section {
   border-bottom: solid 1px #787d80; }
 
+/* NEWS PAGE */
+.news-article {
+  padding: 40px;
+  border-bottom: 1px solid #58585b; }
+  .news-article .main-image {
+    margin: 20px 0; }
+  .news-article h3 {
+    font-size: 1.8em;
+    font-family: "Open Sans Condensed";
+    padding-bottom: 10px; }
+  .news-article p {
+    font-size: 1em;
+    font-weight: 200; }
+
 /* PROFILE */
 .profile-section {
   width: 100%;
