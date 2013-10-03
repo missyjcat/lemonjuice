@@ -45,7 +45,7 @@
 		</div>
 
 		<div class="section-title clear-both interactive">
-			<h2>Interactive</h2>
+			<h2>Online Campaigns</h2>
 		</div>
 
 		<div class="section interactive-section overlay-trigger">
