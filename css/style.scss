@@ -357,6 +357,7 @@
 
 		h3 {
 			padding-bottom: 15px;
+			color: #989898;
 		}
 
 		p {
@@ -368,10 +369,13 @@
 
 	.work-titles {
 		width: 300px;
+		padding-left: 15px;
+		border-left: solid #000 1px;
 		float: left;
 		font-family: $boldcon;
 		font-size: 1.1em;
 		color: $grey-text;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 
 		li {

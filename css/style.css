@@ -349,7 +349,8 @@ h3 {
     color: black;
     padding-bottom: 15px; }
   .work-text h3 {
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    color: #989898; }
   .work-text p {
     width: 450px;
     font-size: .9em;
@@ -357,10 +358,13 @@ h3 {
 
 .work-titles {
   width: 300px;
+  padding-left: 15px;
+  border-left: solid #000 1px;
   float: left;
   font-family: "Open Sans Condensed";
   font-size: 1.1em;
   color: #787d80;
+  letter-spacing: 1px;
   text-transform: uppercase; }
   .work-titles li {
     padding-bottom: 7px; }
