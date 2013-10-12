@@ -368,6 +368,8 @@ h3 {
   text-transform: uppercase; }
   .work-titles li {
     padding-bottom: 7px; }
+    .work-titles li a:hover {
+      color: #e4c320; }
 
 /* LAYOUT STYLES */
 .float-left {

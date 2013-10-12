@@ -380,6 +380,10 @@
 
 		li {
 			padding-bottom: 7px;
+
+			a:hover {
+				color: $yellow-text;
+			}
 		}
 	}
 
